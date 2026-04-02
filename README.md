@@ -51,7 +51,7 @@
 
 ## Reflection
 
-The easiest part of this assignment was Part 1. the Date object methods are straightforward and simple. The hardest part was the  differences between Number conversion methods. I learned that the Date object uses 0-based months. The Number object is versatile on multiple conversion methods. Displaying results in inspect element showed me how JavaScript can dynamically update the DOM, but I already knew this because I am a graduating senior.
+The easiest part of this assignment was Part 1 because the Date object methods are straightforward and simple. The hardest part was understanding the differences between Number conversion methods. I learned that the Date object uses 0-based months, so the month value needs to be adjusted before displaying it. I also learned that the Number object has multiple conversion methods, and each one behaves differently depending on the input format. Displaying results in the browser reinforced how JavaScript can dynamically update the DOM.
 
 ## Screenshot
 

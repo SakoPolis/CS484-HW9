@@ -35,7 +35,8 @@ h1 {
 #dateOutput,
 #numberConversionOutput,
 #mathOutput,
-#typeofOutput {
+#typeofOutput,
+#comparisonOutput {
 	white-space: pre-wrap;
 	font-family: "Cascadia Code", "Fira Code", "JetBrains Mono", Consolas, monospace;
 	font-size: 0.95rem;

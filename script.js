@@ -142,6 +142,9 @@ if (Number.isInteger(numberToCheck)) {
     output += "The number " + numberToCheck + " is not an integer.\n";
 }
 
+// Re-render Part 2 output so appended conditional messages are shown.
+document.getElementById("numberConversionOutput").innerText = output;
+
 // ==========================
 // Extra Credit: Typeof Section
 // ==========================
