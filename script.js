@@ -121,3 +121,18 @@ document.getElementById("mathOutput").innerText = mathOutput;
 //
 // 2. Display a message on the page based on the condition
 //    (append it to an existing section or create a new message)
+var valueToCheck = "abc";
+
+if (Number.isNaN(Number(valueToCheck))) {
+    document.getElementById("conditionalsOutput").innerText = "The value '" + valueToCheck + "' is not a number.";
+} else {
+    document.getElementById("conditionalsOutput").innerText = "The value '" + valueToCheck + "' is a number.";
+}
+
+var numberToCheck = 10;
+
+if (Number.isInteger(numberToCheck)) {
+    document.getElementById("conditionalsOutput").innerText += "\nThe number " + numberToCheck + " is an integer.";
+} else {
+    document.getElementById("conditionalsOutput").innerText += "\nThe number " + numberToCheck + " is not an integer.";
+}
