@@ -6,8 +6,8 @@
 
 - `Date` object: `getMonth()`, `getDate()`, `getFullYear()`
 - `Number` object: `Number()`, `Number.isNaN()`, `Number.isInteger()`, `Number.parseInt()`, `Number.parseFloat()`
-- `toFixed()` method for formatting decimals
-- `typeof` operator for type identification
+- `toFixed()` method for formatting decimals (this function makes floating point into fixed point)
+- `typeof` operator for type identification (function to check type of variable)
 
 ## Comparison: Number() vs Number.parseInt() vs Number.parseFloat()
 
