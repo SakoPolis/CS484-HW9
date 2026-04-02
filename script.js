@@ -107,6 +107,7 @@ var mathOutput = "Addition: " + num1 + " + " + num2 + " = " + addition + "\n";
 mathOutput += "Multiplication: " + num1 + " * " + num3 + " = " + formattedMultiplication;
 
 document.getElementById("mathOutput").innerText = mathOutput;
+
 // ==========================
 // Part 4: Conditionals
 // ==========================
@@ -124,15 +125,39 @@ document.getElementById("mathOutput").innerText = mathOutput;
 var valueToCheck = "abc";
 
 if (Number.isNaN(Number(valueToCheck))) {
-    document.getElementById("conditionalsOutput").innerText = "The value '" + valueToCheck + "' is not a number.";
+    output += "The value '" + valueToCheck + "' is not a number.\n";
 } else {
-    document.getElementById("conditionalsOutput").innerText = "The value '" + valueToCheck + "' is a number.";
+    output += "The value '" + valueToCheck + "' is a number.\n";
 }
 
 var numberToCheck = 10;
 
 if (Number.isInteger(numberToCheck)) {
-    document.getElementById("conditionalsOutput").innerText += "\nThe number " + numberToCheck + " is an integer.";
+    output += "The number " + numberToCheck + " is an integer.\n";
 } else {
-    document.getElementById("conditionalsOutput").innerText += "\nThe number " + numberToCheck + " is not an integer.";
+    output += "The number " + numberToCheck + " is not an integer.\n";
 }
+
+// ==========================
+// Extra Credit: Typeof Section
+// ==========================
+
+// Using typeof to identify the type of at least five values
+var stringValue = "hello";
+var numberValue = 42;
+var booleanValue = true;
+var objectValue = { name: "John", age: 30 };
+var arrayValue = [1, 2, 3, 4];
+var undefinedValue;
+var nullValue = null;
+
+var typeofOutput = "Type Identification Results:\n";
+typeofOutput += "Value: '" + stringValue + "' -> typeof: " + typeof stringValue + "\n";
+typeofOutput += "Value: " + numberValue + " -> typeof: " + typeof numberValue + "\n";
+typeofOutput += "Value: " + booleanValue + " -> typeof: " + typeof booleanValue + "\n";
+typeofOutput += "Value: {object} -> typeof: " + typeof objectValue + "\n";
+typeofOutput += "Value: [array] -> typeof: " + typeof arrayValue + "\n";
+typeofOutput += "Value: undefined -> typeof: " + typeof undefinedValue + "\n";
+typeofOutput += "Value: null -> typeof: " + typeof nullValue + "\n";
+
+document.getElementById("typeofOutput").innerText = typeofOutput;
