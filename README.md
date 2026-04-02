@@ -56,6 +56,7 @@ The easiest part of this assignment was Part 1 because the Date object methods a
 ## Screenshot
 
 ![Homework Screenshot](screenshot.png)
+![Updated Homework screenshot](screenshot2.png)
 
 ## Sources
 
