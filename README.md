@@ -61,8 +61,15 @@ The easiest part of this assignment was Part 1. the Date object methods are stra
 
 - **Assignment Specification:** COMP 484 Homework 9: JavaScript Built-In Objects
 - **MDN Web Docs - Date Object:** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+- **MDN Web Docs - Date.prototype.getMonth():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth
+- **MDN Web Docs - Date.prototype.getDate():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate
+- **MDN Web Docs - Date.prototype.getFullYear():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear
 - **MDN Web Docs - Number Object:** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 - **MDN Web Docs - Number.parseInt():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt
 - **MDN Web Docs - Number.parseFloat():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat
+- **MDN Web Docs - Number.isNaN():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN
+- **MDN Web Docs - Number.isInteger():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
 - **MDN Web Docs - typeof Operator:** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
-- **MDN Web Docs - String.prototype.toFixed():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+- **MDN Web Docs - Number.prototype.toFixed():** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+- **MDN Web Docs - Conditional (Ternary) Operator:** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+- **MDN Web Docs - Document.getElementById():** https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
