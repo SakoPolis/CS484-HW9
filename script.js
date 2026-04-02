@@ -148,7 +148,7 @@ var numberValue = 42;
 var booleanValue = true;
 var objectValue = { name: "John", age: 30 };
 var arrayValue = [1, 2, 3, 4];
-var undefinedValue;
+var undefinedValue; //I did not define the value of this variable
 var nullValue = null;
 
 var typeofOutput = "Type Identification Results:\n";
@@ -161,3 +161,45 @@ typeofOutput += "Value: undefined -> typeof: " + typeof undefinedValue + "\n";
 typeofOutput += "Value: null -> typeof: " + typeof nullValue + "\n";
 
 document.getElementById("typeofOutput").innerText = typeofOutput;
+
+// ==========================
+// Bonus: Comparing Number(), Number.parseInt(), and Number.parseFloat()
+// ==========================
+
+// Testing on similar values to show the differences
+var testValue1 = "42";
+var testValue2 = "3.14159";
+var testValue3 = "100px";
+var testValue4 = "  50  ";
+
+var comparisonOutput = "Comparison of Number(), Number.parseInt(), and Number.parseFloat():\n\n";
+
+// Test 1: Simple numeric string
+comparisonOutput += "Test 1: '42'\n";
+comparisonOutput += "  Number('42') = " + Number(testValue1) + "\n";
+comparisonOutput += "  Number.parseInt('42') = " + Number.parseInt(testValue1) + "\n";
+comparisonOutput += "  Number.parseFloat('42') = " + Number.parseFloat(testValue1) + "\n\n";
+
+// Test 2: Decimal string
+comparisonOutput += "Test 2: '3.14159'\n";
+comparisonOutput += "  Number('3.14159') = " + Number(testValue2) + "\n";
+comparisonOutput += "  Number.parseInt('3.14159') = " + Number.parseInt(testValue2) + "\n";
+comparisonOutput += "  Number.parseFloat('3.14159') = " + Number.parseFloat(testValue2) + "\n\n";
+
+// Test 3: String with non-numeric characters
+comparisonOutput += "Test 3: '100px'\n";
+comparisonOutput += "  Number('100px') = " + Number(testValue3) + "\n";
+comparisonOutput += "  Number.parseInt('100px') = " + Number.parseInt(testValue3) + "\n";
+comparisonOutput += "  Number.parseFloat('100px') = " + Number.parseFloat(testValue3) + "\n\n";
+
+// Test 4: String with whitespace
+comparisonOutput += "Test 4: '  50  '\n";
+comparisonOutput += "  Number('  50  ') = " + Number(testValue4) + "\n";
+comparisonOutput += "  Number.parseInt('  50  ') = " + Number.parseInt(testValue4) + "\n";
+comparisonOutput += "  Number.parseFloat('  50  ') = " + Number.parseFloat(testValue4) + "\n";
+
+// Display bonus section if element exists (optional)
+var comparisonElement = document.getElementById("comparisonOutput");
+if (comparisonElement) {
+    comparisonElement.innerText = comparisonOutput;
+}
