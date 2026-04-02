@@ -102,9 +102,13 @@ var addition = num1 + num2;
 var multiplication = num1 * num3;
 
 var formattedMultiplication = multiplication.toFixed(2);
+var averageScore = (num1 + num2 + num3) / 3;
+var passFailLabel = averageScore >= 6 ? "Pass" : "Fail";
 
 var mathOutput = "Addition: " + num1 + " + " + num2 + " = " + addition + "\n";
 mathOutput += "Multiplication: " + num1 + " * " + num3 + " = " + formattedMultiplication;
+mathOutput += "\nAverage: " + averageScore.toFixed(2);
+mathOutput += "\nPass/Fail Label: " + passFailLabel;
 
 document.getElementById("mathOutput").innerText = mathOutput;
 
