@@ -22,6 +22,7 @@ var dateOutput = "Today is " + monthStr + "/" + dayStr + "/" + year;
 
 // Display the result
 document.getElementById("dateOutput").innerText = dateOutput;
+
 // ==========================
 // Part 2: Number Conversion
 // ==========================
@@ -57,6 +58,22 @@ document.getElementById("dateOutput").innerText = dateOutput;
 // 5. Display the final result inside the element:
 //    id="numberConversionOutput"
 
+var numericString1 = "42";
+var numericString2 = "43";
+var decimalString = "3.14";
+var nonNumericString = "hello";
+
+Number(numericString1);
+Number(numericString2);
+Number(decimalString);
+Number(nonNumericString);
+
+var output = "Original: '" + numericString1 + "' -> Converted: " + Number(numericString1) + " -> isNaN: " + Number.isNaN(Number(numericString1)) + " -> isInteger: " + Number.isInteger(Number(numericString1)) + "\n";
+output += "Original: '" + numericString2 + "' -> Converted: " + Number(numericString2) + " -> isNaN: " + Number.isNaN(Number(numericString2)) + " -> isInteger: " + Number.isInteger(Number(numericString2)) + "\n";
+output += "Original: '" + decimalString + "' -> Converted: " + Number(decimalString) + " -> isNaN: " + Number.isNaN(Number(decimalString)) + " -> isInteger: " + Number.isInteger(Number(decimalString)) + "\n";
+output += "Original: '" + nonNumericString + "' -> Converted: " + Number(nonNumericString) + " -> isNaN: " + Number.isNaN(Number(nonNumericString)) + " -> isInteger: " + Number.isInteger(Number(nonNumericString)) + "\n";
+
+document.getElementById("numberConversionOutput").innerText = output;
 // ==========================
 // Part 3: Math & Formatting
 // ==========================
