@@ -55,7 +55,7 @@ The easiest part of this assignment was Part 1. the Date object methods are stra
 
 ## Screenshot
 
-[Screenshot of the webpage can be added here]
+![Homework Screenshot](screenshot.png)
 
 ## Sources
 
