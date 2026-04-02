@@ -94,7 +94,19 @@ document.getElementById("numberConversionOutput").innerText = output;
 // 4. Build a string showing your results
 //
 // 5. Display the results inside the element with id="mathOutput"
+var num1 = 10;
+var num2 = 5;
+var num3 = 3.14159;
 
+var addition = num1 + num2;
+var multiplication = num1 * num3;
+
+var formattedMultiplication = multiplication.toFixed(2);
+
+var mathOutput = "Addition: " + num1 + " + " + num2 + " = " + addition + "\n";
+mathOutput += "Multiplication: " + num1 + " * " + num3 + " = " + formattedMultiplication;
+
+document.getElementById("mathOutput").innerText = mathOutput;
 // ==========================
 // Part 4: Conditionals
 // ==========================
