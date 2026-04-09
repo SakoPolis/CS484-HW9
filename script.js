@@ -20,6 +20,7 @@ var dayStr = day < 10 ? "0" + day : day.toString();
 
 var dateOutput = "Today is " + monthStr + "/" + dayStr + "/" + year;
 
+// λ -> dateOutput = formatted date string
 // Display the result
 document.getElementById("dateOutput").innerText = dateOutput;
 
@@ -58,19 +59,25 @@ document.getElementById("dateOutput").innerText = dateOutput;
 // 5. Display the final result inside the element:
 //    id="numberConversionOutput"
 
+// λ -> numericString1, numericString2, decimalString, nonNumericString are sample inputs
 var numericString1 = "42";
 var numericString2 = "43";
 var decimalString = "3.14";
 var nonNumericString = "hello";
 
+// λ -> convert each sample input with Number()
 Number(numericString1);
 Number(numericString2);
 Number(decimalString);
 Number(nonNumericString);
 
+// λ -> output = first formatted conversion sentence
 var output = "Original: '" + numericString1 + "' -> Converted: " + Number(numericString1) + " -> isNaN: " + Number.isNaN(Number(numericString1)) + " -> isInteger: " + Number.isInteger(Number(numericString1)) + "\n";
+// λ -> output = output + formatted conversion sentence
 output += "Original: '" + numericString2 + "' -> Converted: " + Number(numericString2) + " -> isNaN: " + Number.isNaN(Number(numericString2)) + " -> isInteger: " + Number.isInteger(Number(numericString2)) + "\n";
+// λ -> output = output + formatted conversion sentence
 output += "Original: '" + decimalString + "' -> Converted: " + Number(decimalString) + " -> isNaN: " + Number.isNaN(Number(decimalString)) + " -> isInteger: " + Number.isInteger(Number(decimalString)) + "\n";
+// λ -> output = output + formatted conversion sentence
 output += "Original: '" + nonNumericString + "' -> Converted: " + Number(nonNumericString) + " -> isNaN: " + Number.isNaN(Number(nonNumericString)) + " -> isInteger: " + Number.isInteger(Number(nonNumericString)) + "\n";
 
 document.getElementById("numberConversionOutput").innerText = output;
@@ -94,20 +101,30 @@ document.getElementById("numberConversionOutput").innerText = output;
 // 4. Build a string showing your results
 //
 // 5. Display the results inside the element with id="mathOutput"
+// λ -> num1, num2, num3 are numeric inputs for math operations
 var num1 = 10;
 var num2 = 5;
 var num3 = 3.14159;
 
+// λ -> addition = num1 + num2
 var addition = num1 + num2;
+// λ -> multiplication = num1 * num3
 var multiplication = num1 * num3;
 
+// λ -> formattedMultiplication = fixed-point string
 var formattedMultiplication = multiplication.toFixed(2);
+// λ -> averageScore = arithmetic mean of the three numeric inputs
 var averageScore = (num1 + num2 + num3) / 3;
+// λ -> passFailLabel = conditional label
 var passFailLabel = averageScore >= 6 ? "Pass" : "Fail";
 
+// λ -> mathOutput = first formatted math line
 var mathOutput = "Addition: " + num1 + " + " + num2 + " = " + addition + "\n";
+// λ -> mathOutput = mathOutput + multiplication line
 mathOutput += "Multiplication: " + num1 + " * " + num3 + " = " + formattedMultiplication;
+// λ -> mathOutput = mathOutput + average line
 mathOutput += "\nAverage: " + averageScore.toFixed(2);
+// λ -> mathOutput = mathOutput + pass/fail line
 mathOutput += "\nPass/Fail Label: " + passFailLabel;
 
 document.getElementById("mathOutput").innerText = mathOutput;
@@ -126,19 +143,25 @@ document.getElementById("mathOutput").innerText = mathOutput;
 //
 // 2. Display a message on the page based on the condition
 //    (append it to an existing section or create a new message)
+// λ -> valueToCheck is the sample string for NaN testing
 var valueToCheck = "abc";
 
 if (Number.isNaN(Number(valueToCheck))) {
+    // λ -> output = output + not-a-number line
     output += "The value '" + valueToCheck + "' is not a number.\n";
 } else {
+    // λ -> output = output + number line
     output += "The value '" + valueToCheck + "' is a number.\n";
 }
 
+// λ -> numberToCheck is the sample integer test value
 var numberToCheck = 10;
 
 if (Number.isInteger(numberToCheck)) {
+    // λ -> output = output + integer line
     output += "The number " + numberToCheck + " is an integer.\n";
 } else {
+    // λ -> output = output + non-integer line
     output += "The number " + numberToCheck + " is not an integer.\n";
 }
 
@@ -150,6 +173,7 @@ document.getElementById("numberConversionOutput").innerText = output;
 // ==========================
 
 // Using typeof to identify the type of at least five values
+// λ -> sample values for typeof checks
 var stringValue = "hello";
 var numberValue = 42;
 var booleanValue = true;
@@ -158,13 +182,21 @@ var arrayValue = [1, 2, 3, 4];
 var undefinedValue; //I did not define the value of this variable
 var nullValue = null;
 
+// λ -> typeofOutput begins as the first labeled line
 var typeofOutput = "Type Identification Results:\n";
+// λ -> typeofOutput = typeofOutput + string line
 typeofOutput += "Value: '" + stringValue + "' -> typeof: " + typeof stringValue + "\n";
+// λ -> typeofOutput = typeofOutput + number line
 typeofOutput += "Value: " + numberValue + " -> typeof: " + typeof numberValue + "\n";
+// λ -> typeofOutput = typeofOutput + boolean line
 typeofOutput += "Value: " + booleanValue + " -> typeof: " + typeof booleanValue + "\n";
+// λ -> typeofOutput = typeofOutput + object line
 typeofOutput += "Value: {object} -> typeof: " + typeof objectValue + "\n";
+// λ -> typeofOutput = typeofOutput + array line
 typeofOutput += "Value: [array] -> typeof: " + typeof arrayValue + "\n";
+// λ -> typeofOutput = typeofOutput + undefined line
 typeofOutput += "Value: undefined -> typeof: " + typeof undefinedValue + "\n";
+// λ -> typeofOutput = typeofOutput + null line
 typeofOutput += "Value: null -> typeof: " + typeof nullValue + "\n";
 
 document.getElementById("typeofOutput").innerText = typeofOutput;
@@ -174,32 +206,38 @@ document.getElementById("typeofOutput").innerText = typeofOutput;
 // ==========================
 
 // Testing on similar values to show the differences
+// λ -> comparison sample inputs
 var testValue1 = "42";
 var testValue2 = "3.14159";
 var testValue3 = "100px";
 var testValue4 = "  50  ";
 
+// λ -> comparisonOutput starts with a heading line
 var comparisonOutput = "Comparison of Number(), Number.parseInt(), and Number.parseFloat():\n\n";
 
 // Test 1: Simple numeric string
+// λ -> comparisonOutput = comparisonOutput + test 1 block
 comparisonOutput += "Test 1: '42'\n";
 comparisonOutput += "  Number('42') = " + Number(testValue1) + "\n";
 comparisonOutput += "  Number.parseInt('42') = " + Number.parseInt(testValue1) + "\n";
 comparisonOutput += "  Number.parseFloat('42') = " + Number.parseFloat(testValue1) + "\n\n";
 
 // Test 2: Decimal string
+// λ -> comparisonOutput = comparisonOutput + test 2 block
 comparisonOutput += "Test 2: '3.14159'\n";
 comparisonOutput += "  Number('3.14159') = " + Number(testValue2) + "\n";
 comparisonOutput += "  Number.parseInt('3.14159') = " + Number.parseInt(testValue2) + "\n";
 comparisonOutput += "  Number.parseFloat('3.14159') = " + Number.parseFloat(testValue2) + "\n\n";
 
 // Test 3: String with non-numeric characters
+// λ -> comparisonOutput = comparisonOutput + test 3 block
 comparisonOutput += "Test 3: '100px'\n";
 comparisonOutput += "  Number('100px') = " + Number(testValue3) + "\n";
 comparisonOutput += "  Number.parseInt('100px') = " + Number.parseInt(testValue3) + "\n";
 comparisonOutput += "  Number.parseFloat('100px') = " + Number.parseFloat(testValue3) + "\n\n";
 
 // Test 4: String with whitespace
+// λ -> comparisonOutput = comparisonOutput + test 4 block
 comparisonOutput += "Test 4: '  50  '\n";
 comparisonOutput += "  Number('  50  ') = " + Number(testValue4) + "\n";
 comparisonOutput += "  Number.parseInt('  50  ') = " + Number.parseInt(testValue4) + "\n";
